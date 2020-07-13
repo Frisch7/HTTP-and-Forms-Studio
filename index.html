@@ -2,18 +2,23 @@
 
 <head>
 	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
+	<form  autocomplete="off" id="searchForm">
+	<input id="searchtextbox" type="text" name="q"/>
+	<label><input type="radio" name="engine" value="google" />Google</label>
+	<label><input type="radio" name="engine" value="duckduckgo" />DuckDuckGo</label>
+	<label><input type="radio" name="engine" value="bing" />Bing</label>
+	<label><input type="radio" name="engine" value="ask" />Ask</label>
+	<br>
+	<button id="searchButton" type="submit" value="Go!">Go!</button>
 	</form>
+
+	<p id="error"></p>
 
 </body>
